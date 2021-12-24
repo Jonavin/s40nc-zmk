@@ -34,10 +34,17 @@
 		fn_layer {
 			bindings = <
                 &kp ESC       &kp F1        &kp F2        &kp F3            &kp F4     &kp F5         &kp F6      &kp F7     &kp F8    &kp F9    &kp F10     &kp DEL 
-                &kp CAPS      &kp F11       &kp F12       &none             &n                              23233
+                &kp CAPS      &kp F11       &kp F12       &none             &none      &none          &none       &kp PSCRN  &kp SLCK  &kp PAUSE_BREAK       &trans
+                &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &none      &bt BT_CLR     &kp KP_NUM  &trans     &trans              &kp PG_UP   &trans
+                &trans        &trans        &trans        &bt BT_PRV                   &trans                     &bt BT_NXT           &kp HOME  &kp PG_DN   &kp END
+			>;
+		};
+        
+        lower_layer {
+			bindings = <
                 &kp GRAVE     &kp EXCL      &kp AT        &kp HASH          &kp DLLR   &kp PRCNT      &kp CARET   &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR   &reset
                 &kp TILDE     &kp MINUS     &kp EQUAL     &kp COLON         &kp SEMI   &kp SQT        &kp DQT     &kp QMARK  &kp FSLH  &kp PIPE             &kp BSLH
-                &trans        &kp UNDER     &kp PLUS      &none             &kp LBKT   &kp RBKT       &kp LBRC    &kp RBRC   &kp GT              &kp KP_DOT &kp K_PP
+                &trans        &kp UNDER     &kp PLUS      &none             &kp LBKT   &kp RBKT       &kp LBRC    &kp RBRC   &kp GT              &kp DOT    &kp K_PP
                 &trans        &trans        &trans        &kp K_PREV                   &trans                     &kp K_NEXT        &kp K_VOL_DN &kp K_MUTE &kp K_VOL_UP
 			>;
 		};
